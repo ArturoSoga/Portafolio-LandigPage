@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DevCodes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flh3.googleusercontent.com%2FpE5dgP2JoUsdqmsqCVRmsUQutQ7FH80O4ajh_yH4LW2kj3W7vMmbe_-tpzduyy3tDA%3Dw300&f=1&nofb=1">
+</head>
+
+<body>
+    <header>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active " id="btn_inicio" aria-current="page">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " id="btn_proyectos" aria-current="page" href="./src/proyectos/proyectos.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="./src/tutoriales/tutoriales.html">Tutoriales</a>
+            </li>
+
+        </ul>
+    </header>
+    <div class="container p-5">
+
+        <div>
+            <div class="mb-5 mt-5 d-flex">
+                <div>
+                    <figure>
+                        <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.uidownload.com%2Ffiles%2F333%2F448%2F842%2Fpsd-universal-blue-web-user-icon.jpg&f=1&nofb=1" width="250" height="200">
+                    </figure>
+
+                </div>
+                <div class="p-4">
+                    <h4>Arturo Solorzano</h4>
+                    <p>Hola! , Bienvendio a mi blog de desarrollo soy un ingeniero de software con 5 anos de experiencia ,apacionado por la tecnoloogia busco documentar y compartir cada uno de mis proyectos, tambien encontraras algunos tutoriales a los que
+                        les puedes echar un ojo si es que los necesitas.</p>
+                    <p>Manejo multiples lenjuages como python ,C# , java script ,typescrypt web services como AWS o AZURE entre otros.</p>
+
+                    <h6 style="text-align: center;">Tambien apasionado por la inteligencia artificial y la programacion de videojuegos</h6>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <footer class="p-3 mb-2  text-white border-top">
+            <div class="d-flex text-center row col">
+                <div class="mt-3 col">
+                    <a href="#" title="artursoga@outlook.es" id="copy" onclick="copyToClipBoard()" type="email"><img src="https://img.icons8.com/external-xnimrodx-lineal-xnimrodx/64/000000/external-email-contact-us-xnimrodx-lineal-xnimrodx-4.png" /></a>
+                </div>
+                <div class="mt-3 col">
+                    <a target="_blank" href="https://github.com/ArturoSoga"> <img src="https://img.icons8.com/glyph-neue/64/000000/github.png" /></a>
+                </div>
+                <div class="mt-3 col">
+                    <a target="_blank" href="https://es.stackoverflow.com/users/171341/arturo-soga?tab=profile"><img src="https://img.icons8.com/ios/50/000000/stackoverflow.png" /></a>
+                </div>
+                <div class="mt-3 col">
+                    <a target="_blank" href="https://platzi.com/p/arturosoga"><img src=" https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freelogovectors.net%2Fwp-content%2Fuploads%2F2021%2F06%2Fplatzi-logo-freelogovectors.net_.png&f=1&nofb=1" width="240px" height="70px" /></a>
+                </div>
+
+
+
+
+        </footer>
+
+        </div>
+        <script>
+            let indexpage = 'inicio'
+            OnInitPage();
+
+            function OnInitPage(page = "inicio") {
+
+                if (indexpage != page) {
+
+                    var antpage = document.getElementById('btn_' + indexpage);
+                    antpage.classList.remove("active")
+                    indexpage = page;
+
+                }
+
+                var item = document.getElementById('btn_' + page)
+                item.classList.add("active")
+            };
+
+            function copyToClipBoard() {
+                navigator.clipboard.writeText("artursoga@outlook.es")
+                    .then(() => {
+                        console.log("Text copied to clipboard...")
+                    })
+                ejecutaAlerta()
+
+            }
+            console.log(window)
+
+            function ejecutaAlerta() {
+                var w = window.open('', '', 'toolbar=yes,scrollbars=yes,resizable=yes,top=200,left=2650,width=400,height=200')
+                w.document.write("Copied!")
+                w.focus()
+                setTimeout(function() {
+                    w.close();
+                }, 300)
+            }
+        </script>
+</body>
+
+</html>
