@@ -27,14 +27,29 @@
     </header>
     <div class="container p-2">
         <div>
+
+            <div class="row col shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; background-color: #E4EA37; ">
+                <div class="col  "> 
+                    <h4 style="color: #AEB325 ;">AVISO</h4>
+                    <p>Toda version de cada una de las aplicaciones publicadas en el sitio o en github se encuentra en una version muy prelimnar del desarrollo ya que unicamente tienen como objetivo mostrar los conocimientos y practicas de desarrollo empleadas ; muchas aplicaciones para terceros se contrulleron a partir de estas y mostrar una version mas avanzada no seria conveniente para el autor.</p>
+                </div>
+            </div>
    
             <a onclick="alert('Disponible proximamente')">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
                     <div class="col  ">
                        <h3>Gob Central - Servicios centralizados</h3>
-                         <!-- <p class="text-center">Existen muchas practicas iniciales de desarrollo mas sin embargo en cuanto a mi experiencia cuando comienzas a programar la prueba inicial en su mayoria es un sistema CRUD Tambien es posible que te lo dejaran como un proyecto
-                            final.
-                        </p> -->
+                      <p>En principio la aplicacion concentra multiples servicios de gobierno y capmañas ,Unicamente por medio de una aplicacion . en escencia unicamente tendriamos que recibir las Apis de gobierno para integrarlas</p>
+                        <p>Que es lo mas complejo ?</p>
+                        <P>La verdad es que nada ; la aplicacion es 80% vista y 20% de tecnologia empleada de nuestra parte . 10% del sistema de control y registro de usuarios y otro 10% del portal de pago de servicios como agua , predial ,etc.</P>
+                        <p>Que falta por mencionar ?</p>
+                        <p>
+                            Bueno sin duda siempre se necesita una forma de administracion de la aplicacion asi que siempre procuro agregar un dashboard de forma web o de escritorio segun se necesite,
+                            ya que la informacion de registro para campañas a lo largo de los años cambiara.
+                        </p>
+                        <p>Que mejoraria ?</p>
+                        <p>siendo sinceros todo es mejorable en esta aplicacion meramente visual , jugando con el dasboard podriamos hacer que la parte de la administracion podria configurar sus propios servicios de una forma muy simple ya que cada opcion es proporcionada por la nformacion de la base de datos que viaja a traves de una api. 
+                            No se hizo de primera instancia ya que esta aplicacion es meramente experimental para tratar de suplir una necesidad de gobierno asi que en una MVP que probablemente no tenga otra version pero a su ves nos permite escalabilidad si se requiere . </p>
                     </div>
                     <div class="col d-block" >
                 
@@ -43,7 +58,110 @@
                         </figure>
 
                     </div>
+                </div>
+            </a>
+
+            
+            <a onclick="alert('Disponible proximamente')">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
+                    <div class="col  ">
+                       <h3>HomeIn</h3>
+                        <p>Se tomo como base otra aplicacion desarrollada anteriormente llamada CheckingApp ,la premisa principal era reducir costos en un edificion de viviendas para restringir los accesos a las areas como gym , labanderias y roofgarden</p>
+                        <p>El uso de un web service como azure se implemento para montar el dashboard de la aplicacion mas el sistema de apis interno todo esto se subio en un app service a traves de una alpicacion creada con c# y angular , tambien se configuro un servicio de base de datos (sql server),finalmente se desarrollo la app en react native  </p>
+                        <p>Como funciona la app ?</p>
+                        <p>Basicamente tenemos un inicio de session y dos opciones mas una para ver los codigos de accesos de las arear restringidas y otro para realizar el pago del mantenimiento </p>
                     </div>
+                    <div class="col d-block" >
+                
+                        <figure>
+                            <img class="img-fluid rounded d-block m-l-none" style="margin:auto; " alt="Slogan" src="../../assets/Arquitectura.jpg" height="180" width="300">
+                        </figure>
+
+                    </div>
+                </div>
+            </a>
+
+            <a onclick="alert('Disponible proximamente')">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
+                    <div class="col  ">
+                       <h3>FactService</h3>
+                       <p>
+                        En primera instancia la parte en donde implementamos un web service se puede montar tanto en AZURE como en AWS inclusos hay algunas equivalencias casi directas como S3 / Blobls.
+                        Ciertos servicios si cambian completamente como el caso de Azure donde tenemos un app service donde nos proveen un perfil de publicacion que se importa en visual studio y se publica ,
+                        En el caso de EC2 AWS nos da un escritorio remoto en donde tenemos que configurar un IIS , dominio , certificados SSL . Tambien ciertas apis se tienen que cambiar(unicamente me refiero a las apis que los servicios proveen como S3).
+                       </p>
+                       <P>Como funciona la aplicacion web ?</P>
+                       <P>funciona a partir de un layout en XML y esta pensado para estructurar la informacion con cualquier pack ,seguimos ciertos procesos  mostramos una prefactura y las podemos visualizar y descargar en una ventana de historial de facturas </P>        
+                    </div>
+                    <div class="col d-block" >
+                
+                        <figure>
+                            <img class="img-fluid rounded d-block m-l-none" style="margin:auto; " alt="Slogan" src="../../assets/webapps.jpg" height="180" width="300">
+                        </figure>
+
+                    </div>
+                </div>
+            </a>
+
+            <a onclick="alert('Disponible proximamente')">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
+                    <div class="col  ">
+                       <h3>CheckingApp</h3>
+                       <p>Esta es una de las aplicaciones que he reescrito aproximadamente unas 3 o 4 veces y aun continuo haciendo mejoras ya que en diversas aplicaciones ocupo las implementaciones/tecnologias. 
+                          lo que pretendo es crear un tipo kernel que se pueda trasnformar en diversas aplicaciones como en una aplicacion para checar turno , un sistema de monitoreo para delivery o para operadores de tractocamiones , como complemento para para esquemas de nomina o sistemas de monitores .
+                          a su vez en el dashboard un sistema de reportes dinamico .
+                       </p>
+                       <p>
+                        Actualmente la aplicacion movil tiene un Login despues muestra un teclado con una navtab donde puedes ver tus checking de la semana .
+                        el registro y la recuperacion de contrasena esta a cargo en el dasboard y la empresa misma es encargado de administrarle .
+                       </p>
+                    </div>
+                    <div class="col d-block" >
+                
+                        <figure>
+                            <img class="img-fluid rounded d-block m-l-none" style="margin:auto; " alt="Slogan" src="../../assets/appmovile.jpg" height="180" width="300">
+                        </figure>
+
+                    </div>
+                </div>
+            </a>
+
+            <a onclick="alert('Disponible proximamente')">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
+                    <div class="col  ">
+                       <h3>BasicNomina</h3>
+                         <p>Es una aplicacion sencilla basado en un concepto de blockchain como etherum , este es un sistemna de nomina basado en contratos , el contrato base esta configurado y disenado encuanto a un calculo de nomina sencillo basado en las leyes mexicanas.
+                         a partir de este contrato base el usuario puede agregar percepciones o deducciones dependiendo del area ya sea por tiempo indefinodo o por ocasion unica .
+                         Esto permite que en el portal de nomina unicamente se anide el contrato para hacer el calculo de nomina.</p>
+                         <p>Este proyecto es totalmente independiente y hasta el momento se tiene unicamente una version BETA , ademas se esta desarrollando comprobantes de nomina automatico y un sistema complejo basado en metaprogramacion.</p>
+                    </div>
+                    <div class="col d-block" >
+                
+                        <figure>
+                            <img class="img-fluid rounded d-block m-l-none" style="margin:auto; " alt="Slogan" src="../../assets/rdp.jpg" height="180" width="300">
+                        </figure>
+
+                    </div>
+                </div>
+            </a>
+
+
+            <a onclick="alert('Disponible proximamente')">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 shadow-lg p-3 mb-5 rounded btn-card " style="width: 100%; margin: 0%; ">
+                    <div class="col  ">
+                       <h3>DigitalMarket</h3>
+                            <p>DigitalMarket es la evolucion de un sistema llamado MarketPlace que cree en universidad con php.</p>
+                            <p>Como tal es un punto de venta de accesos facil con una version de pago y una version gratis . principalmente apuntamos a los abarrotes mas pequenos para recaudar informacion y emplear scrips de data science</p>
+                            <p>anteriormente se lanzo una version MVP la cual tuvo muchos problemas de rendimiento y enlace en la nube asi como tambien una capa de negocio insostenible </p>
+
+                            <p>Actualmente se encuentra desarrollado en angular y se mantiene como un software privado  para practicas de IA y data science </p>
+                    </div>
+                    <div class="col d-block" >
+                
+                        <figure>
+                            <img class="img-fluid rounded d-block m-l-none" style="margin:auto; " alt="Slogan" src="../../assets/rdp.jpg" height="180" width="300">
+                        </figure>
+
                     </div>
                 </div>
             </a>
