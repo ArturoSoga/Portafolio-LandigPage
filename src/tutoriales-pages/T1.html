@@ -199,9 +199,51 @@
                                 <p>Al igual que en el metodo anterior generamos esta funcion automaticamente al dar click en el button del form1 . agregamos una instancia de usuario al metodo y luego llamamos a la funcion crear a traves de la instancia y finalizamos llamando carga grid para ver el nuevo registro en el data grid . </p>
                             </div>
                             <p><strong>Para las otras funciones(Editar , Actualizar , ELiminar ) Vamos a hacer algunas modificaciones en el data grid </strong></p>
+                            <div style="margin: 60px;">
+                                <diV style="text-align: center;">
+                                    <figure >
+                                        <img src="../../assets/t1/t18.jpg" width="600" height="250">
+                                    </figure>
+                                </diV>
+                                <p>Vamos a crear un metodo unicamente para crear botones dentro del DataGridView . Es aqui donde los invito a que cada que usen un objeto nuevo como DataGridView tomen un tiempo para estudiar su documentacion oficial y experimenten con las funciones . En resumen esta es una funcion que nos ayudara a crear los botones en cada fila y los colocara una nueva columna.<a href="https://docs.microsoft.com/es-es/dotnet/api/system.windows.forms.datagridview?view=windowsdesktop-6.0">DataGridView</a></p>
+                            </div>
+                            <div style="margin: 60px;">
+                                <diV style="text-align: center;">
+                                    <figure >
+                                        <img src="../../assets/t1/t19.jpg" width="600" height="250">
+                                    </figure>
+                                </diV>
+                                <p>Vamos a agregar dos llamados a el metodo creado anteriormente para crear dos botones actualizar y eliminar.</p>
+                            </div>
+                            <div style="margin: 60px;">
+                                <diV style="text-align: center;">
+                                    <figure >
+                                        <img src="../../assets/t1/t20.jpg" width="700" height="350">
+                                    </figure>
+                                </diV>
+                                <p>Por ultimo vamos a crear automaticamente la funcion que se muestra en la imagen . Unicamente damos click en una de las celdas, Luego tenemos la instancia de usuarios(Esta tambien se puede hacer de forma global para no tener que instanciarla en cada metodo ).</p>
+                                <p>Lugo tenemos una estructura de control (if ,else if) para traernos la columna que fue clickeada(Notemos como los comentario son 100% utiles ya que nos ayuda a entender porque es 5 y porque es 6 (no siempre es necesario comentar cada linea de codigo)).</p>
+                                <p>Finalmente cargamos el grid para ver los cambios automaticamente.</p>
+
+                            </div>
                         </li>
                     </ul>
                 </ol>
+            </div>
+            <div>
+                <h4>5.- Funcionalidad</h4>
+                <div style="margin: 60px;">
+                    <diV style="text-align: center;">
+                        <figure >
+                            <img src="../../assets/t1/t21.jpg" width="600" height="350">
+                        </figure>
+                    </diV>
+                    <p>Como podemos ver respetamos completamente el diseno principal de la aplicacion pero esto no quiere decir que no se pueda mejorar .</p>
+                    <p><strong>Leer</strong> La lectura esta implicita al momento de iniciar la aplicacion , es como vemos la informacion en el Grid.</p>
+                    <p><strong>Agregar</strong>Para agregar un registro llenamos los TextBox y damos click en agregar .</p>
+                    <p><strong>Actualizar</strong>Como tenemos habilitada la lectura y escritura en las celdas directamente en el grid podemos editar la informacion en cada columna y guaradamos con el boton actualizar / editar. </p>
+                    <p><strong>Eliminar</strong>Gracias a que posicionamos el boton eliminar en cada fila al momento de elimar agarra el registro endonde se encuentra el booton. NOTA:en un ambito profecional se usa un campo booleano en la base de datos que marcamos como inactivo cuando eliminamos un registro.</p>
+                </div>
             </div>
         </div>
         <footer class="p-3 mb-2  text-white border-top">
